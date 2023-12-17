@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire</title>
+  <link rel="stylesheet" href ="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>CONTACT</h1>
+    <nav>
+      <ul>
+        <li> <a href="index.html">Accueil</a></li>    
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="competences.html">Competences</a></li>
+        <li><a href="formulaire.html">Formulaire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section>
+
+    <h8>Contactez-nous</h8>
+  
+    <form action="/traitement.php" method="post" onsubmit="return validerFormulaire()" >
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom"><br><br>
+      
+      <label for="cin"> CIN :</label>
+      <input type="text" id="cin" name="cin"><br><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email"><br><br>
+      
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      
+      <input type="submit" value="Envoyer">
+    </form>
+  </section>
+ 
+</body>
+</html>
